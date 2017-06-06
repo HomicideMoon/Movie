@@ -1,0 +1,128 @@
+html,
+body,
+span,
+div,
+a,
+ul,
+li,
+ol,
+menu,
+nav,
+header,
+footer {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Mircosoft Yahei";
+    font-size: 125%;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+$unit:20px;
+@mixin rad($radius: 5px) {
+    -webkit-border-radius: $radius;
+    -webkit-border-radius: ($radius / $unit) * 1rem;
+    -moz-border-radius: $radius;
+    -moz-border-radius: ($radius / $unit) * 1rem;
+    -ms-border-radius: $radius;
+    -ms-border-radius: ($radius / $unit) * 1rem;
+    -o-border-radius: $radius;
+    -o-border-radius: ($radius / $unit) * 1rem;
+    border-radius: $radius;
+    border-radius: ($radius / $unit) * 1rem;
+}
+
+@mixin flex($flexflow: row nowrap, $content: space-around, $center: center) {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: $flexflow;
+    -webkit-flex-flow: $flexflow;
+    justify-content: $content;
+    -webkit-justify-content: $content;
+    align-items: $center;
+    -webkit-align-items: $center;
+}
+
+@mixin rem($var, $sizepx) {
+    #{$var}: $sizepx;
+    #{$var}: ($sizepx / $unit) * 1rem;
+}
+
+.hint {
+    position: fixed;
+    @include rad;
+    @include rem(width, 320px);
+    @include rem(height, 80px);
+    @include rem(font-size, 24px);
+    @include rem(line-height, 80px);
+    @include rem(margin-left, -160px);
+    left: 50%;
+    top: 25%;
+    background: violet;
+    color: white;
+    text-align: center;
+    display: none;
+}
+
+@media only screen and (max-width: 561px) {
+    html,
+    body {
+        font-size: 109%!important;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    html,
+    body {
+        font-size: 94%!important;
+    }
+}
+
+@media only screen and(max-width:415px) {
+    html,
+    body {
+        font-size: 80.859375%!important;
+    }
+}
+
+@media only screen and(max-width:376px) {
+    html,
+    body {
+        font-size: 73.2421875%!important;
+    }
+}
+
+@media only screen and(max-width:361px) {
+    html,
+    body {
+        font-size: 70.3125%!important;
+    }
+}
+
+@media only screen and(max-width:321px) {
+    html,
+    body {
+        font-size: 62.5%!important;
+    }
+}

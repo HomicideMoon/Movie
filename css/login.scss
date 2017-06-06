@@ -1,0 +1,182 @@
+@import 'public.scss';
+body {
+    background: #fafafa;
+}
+
+header {
+    @include rem(height, 86px);
+    width: 100%;
+    background: #f14d41;
+    padding: 28px 22px;
+    padding: 1.4rem 1.1rem;
+    span {
+        color: #FFF;
+        @include rem(font-size, 30px);
+        @include rem(line-height, 30px);
+    }
+    a {
+        color: #FFF;
+        float: right;
+        @include rem(font-size, 30px);
+        @include rem(line-height, 30px);
+    }
+}
+
+ul.login-style {
+    width: 100%;
+    @include rem(height, 84px);
+    li {
+        width: 50%;
+        text-align: center;
+        color: #636363;
+        @include rem(font-size, 24px);
+        @include rem(line-height, 84px);
+        @include rem(height, 84px);
+        float: left;
+    }
+    li.on-chosen {
+        border-bottom: 4px solid #f24a3d;
+        color: #f24a3d;
+    }
+}
+
+.containers {
+    width: 200%;
+    height: auto;
+    overflow: hidden;
+    .container {
+        width: 50%;
+        float: left;
+        height: auto;
+        .sheet {
+            width: 100%;
+            @include rem(height, 170px);
+            border-bottom: 1px solid #e4e4e4;
+            border-top: 1px solid #e4e4e4;
+            background: white;
+            .username,
+            .phone-number,
+            .password,
+            .icode {
+                width: 97%;
+                margin-left: 3%;
+                @include rem(height, 84px);
+                position: relative;
+                span {
+                    @include rem(font-size, 24px);
+                    @include rem(line-height, 84px);
+                }
+                input {
+                    width: 45%;
+                    @include rem(font-size, 24px);
+                    @include rem(margin-top, 30px);
+                    @include rem(text-indent, 32px);
+                    color: #000;
+                }
+            }
+        }
+        .password,
+        .icode {
+            border-top: 1px solid #e4e4e4;
+        }
+        .username {
+            .clearusername {
+                @include rem(font-size, 24px);
+                @include rem(margin-top, 30px);
+                margin-right: 3%;
+                float: right;
+                display: none;
+            }
+        }
+        .icode {
+            .clearcode {
+                @include rem(font-size, 24px);
+                @include rem(margin-top, 30px);
+                margin-right: 3%;
+                float: right;
+                display: none;
+            }
+        }
+        .password {
+            .visible-or-not,
+            .clearpwd {
+                @include rem(font-size, 24px);
+                @include rem(margin-top, 30px);
+                margin-right: 3%;
+                float: right;
+            }
+            .clearpwd {
+                display: none;
+            }
+        }
+        .phone-number {
+            .clearphonenum {
+                @include rem(font-size, 24px);
+                @include rem(margin-top, 30px);
+                margin-right: 3%;
+                float: right;
+                display: none;
+            }
+            .getcode {
+                float: right;
+                @include rem(font-size, 24px);
+                @include rem(margin-top, 27px);
+                @include rem(line-height, 30px);
+                padding: 0 12px;
+                padding: 0 0.6rem;
+                margin-right: 3%;
+                text-align: center;
+                @include rad;
+                background: lightgreen;
+                color: white;
+            }
+            .getcode.disabled {
+                background: #663a48;
+                color: yellow
+            }
+        }
+    }
+    .login {
+        @include rem(margin, 28px);
+        @include rem(font-size, 30px);
+        @include rem(line-height, 84px);
+        @include rem(height, 84px);
+        @include rad;
+        background: #f7958c;
+        color: white;
+        text-align: center;
+        display: block;
+    }
+    .login.disabled {
+        color: grey;
+    }
+    .have-problem {
+        text-align: center;
+        width: 100%;
+        @include rem(margin-top, 40px);
+        @include rem(height, 32px);
+        a,
+        span {
+            color: #989898;
+            @include rem(font-size, 20px);
+            @include rem(line-height, 32px);
+        }
+    }
+}
+
+.container.phone-login {
+    .have-problem {
+        text-align: justify;
+        a,
+        span {
+            float: left;
+        }
+        .agreement {
+            float: right;
+            @include rem(margin-right, 28px);
+        }
+        span {
+            @include rem(margin-left, 28px);
+        }
+    }
+}

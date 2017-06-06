@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+
+<body>
+    <header>
+        <span>注册</span>
+    </header>
+    <div class="list">
+        <ul>
+            <li class="step current-step">1输入手机号</li>
+            <li class="sep">></li>
+            <li class="step">2输入验证码</li>
+            <li class="sep">></li>
+            <li class="step">3设置密码</li>
+        </ul>
+    </div>
+    <div class="sheet">
+        <div class="phone-number">
+            <input type="text" placeholder="请输入手机号">
+        </div>
+        <div class="CAPTCHA">
+            <div class="get-icode">
+                <input class="icode" type="button" value="发送验证码">
+            </div>
+            <input type="text" placeholder="请输入验证码">
+        </div>
+    </div>
+    <a class="verify">下一步</a>
+    <ul class="agree">
+        <li>
+            <a class="check"></a>
+        </li>
+        <li>
+            <span>我已阅读并同意</span>
+        </li>
+        <li>
+            <a class="agreement" href="">猫眼电影用户协议</a>
+        </li>
+    </ul>
+    <span class="hint"></span>
+</body>
+
+</html>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/signup.js"></script>

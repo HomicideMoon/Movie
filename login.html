@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <header>
+        <a href="signup.html">注册</a>
+        <span>登录</span>
+    </header>
+    <ul class="login-style">
+        <li class="on-chosen username-login">账号密码登录</li>
+        <li class="phone-login">手机号快捷登录</li>
+    </ul>
+    <ul class="containers">
+        <li class="container">
+            <div class="sheet">
+                <div class="username">
+                    <a class="iconfont clearusername">&#xe649;</a>
+                    <span>账号</span>
+                    <input type="text" placeholder="请输入手机号">
+                </div>
+                <div class="password">
+                    <a class="iconfont visible-or-not">&#xe623;</a>
+                    <a class="iconfont clearpwd">&#xe649;</a>
+                    <span>密码</span>
+                    <input type="password" placeholder="请输入密码">
+                </div>
+            </div>
+            <a class="login with-pwd">登录</a>
+            <div class="have-problem">
+                <a>登录遇到问题?</a>
+            </div>
+        </li>
+        <li class="container phone-login">
+            <div class="sheet">
+                <div class="phone-number">
+                    <a class="getcode">发送验证码</a>
+                    <a class="iconfont clearphonenum">&#xe649;</a>
+                    <span>手机号</span>
+                    <input type="text" placeholder="仅支持中国大陆手机号">
+                </div>
+                <div class="icode">
+                    <a class="iconfont clearcode">&#xe649;</a>
+                    <span>验证码</span>
+                    <input type="text" placeholder="请输入验证码">
+                </div>
+            </div>
+            <a class="login with-icode">登录</a>
+            <div class="have-problem">
+                <span>登录即视为同意</span><a class="agreement" href="">猫眼电影用户协议</a>
+                <a>登录遇到问题?</a>
+            </div>
+        </li>
+    </ul>
+    <span class="hint"></span>
+
+
+
+</body>
+
+</html>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/login.js"></script>

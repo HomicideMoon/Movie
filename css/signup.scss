@@ -1,0 +1,136 @@
+@import 'public.scss';
+body {
+    background: #fafafa;
+}
+
+header {
+    @include rem(height, 86px);
+    width: 100%;
+    background: #f14d41;
+    @include rem(padding-top, 28px);
+    @include rem(padding-bottom, 28px);
+    @include rem(padding-left, 22px);
+    span {
+        color: #FFF;
+        @include rem(font-size, 30px);
+        @include rem(line-height, 30px);
+    }
+}
+
+.list {
+    width: 100%;
+    background: #FFF;
+    @include rem(margin-top, 14px);
+    @include rem(height, 84px);
+    @include rem(padding, 30px);
+    ul {
+        width: 100%;
+        height: 100%;
+    }
+    li {
+        text-align: center;
+        @include rem(font-size, 24px);
+        @include rem(line-height, 24px);
+        float: left;
+        font-weight: 600;
+    }
+    .step {
+        width: 30%;
+        color: #676767;
+    }
+    .sep {
+        width: 5%;
+        color: #e2e2e2;
+    }
+    .step.current-step {
+        color: #f44c3f;
+    }
+}
+
+.sheet {
+    width: 100%;
+    @include rem(margin-top, 43px);
+    @include rem(height, 170px);
+    border-bottom: 1px solid #e4e4e4;
+    border-top: 1px solid #e4e4e4;
+    background: white;
+    .phone-number,
+    .CAPTCHA {
+        width: 100%;
+        @include rem(height, 84px);
+        position: relative;
+        input {
+            width: 60%;
+            @include rem(font-size, 24px);
+            @include rem(margin-top, 30px);
+            @include rem(text-indent, 32px);
+            color: #000;
+        }
+    }
+    .CAPTCHA {
+        border-top: 1px solid #e4e4e4;
+        .get-icode {
+            float: right;
+            width: 40%;
+            height: 100%;
+            padding: 20px 40px;
+            padding: 1rem 2rem;
+            .icode {
+                width: 100%;
+                height: 100%;
+                margin-top: 0;
+                text-indent: 0;
+                text-align: center;
+                @include rad;
+                background: lightgreen;
+                color: white;
+            }
+            .icode.disabled {
+                background: #663a48;
+                color: yellow
+            }
+        }
+    }
+}
+
+.verify {
+    @include rem(margin, 28px);
+    @include rem(font-size, 30px);
+    @include rem(line-height, 84px);
+    @include rem(height, 84px);
+    @include rad;
+    background: #f5938a;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+.verify.disabled {
+    color: grey;
+}
+
+.agree {
+    @include rem(margin, 40px);
+    @include rem(height, 32px);
+    li {
+        float: left;
+        .check {
+            @include rem(width, 32px);
+            @include rem(height, 32px);
+            @include rem(margin-right, 10px);
+            @include rad(3px);
+            border: 1px solid #f14d41;
+            display: block;
+        }
+        span,
+        .agreement {
+            @include rem(font-size, 24px);
+            @include rem(line-height, 32px);
+        }
+        .agreement {
+            color: #989898;
+            text-decoration: underline;
+            display: block;
+        }
+    }
+}

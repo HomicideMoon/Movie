@@ -1,0 +1,60 @@
+html,
+body,
+span,
+div,
+a,
+ul,
+li,
+ol,
+menu,
+nav,
+header,
+footer {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+html,
+body {
+  height: 100%;
+  font-family: "Mircosoft Yahei";
+  font-size: 125%; }
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none; }
+
+ul,
+ol {
+  list-style-type: none; }
+
+input {
+  outline: none;
+  border: none; }
+
+@media only screen and (max-width: 561px) {
+  html,
+  body {
+    font-size: 109% !important; } }
+@media only screen and (max-width: 481px) {
+  html,
+  body {
+    font-size: 94% !important; } }
+@media only screen and (max-width: 415px) {
+  html,
+  body {
+    font-size: 80.85938% !important; } }
+@media only screen and (max-width: 376px) {
+  html,
+  body {
+    font-size: 73.24219% !important; } }
+@media only screen and (max-width: 361px) {
+  html,
+  body {
+    font-size: 70.3125% !important; } }
+@media only screen and (max-width: 321px) {
+  html,
+  body {
+    font-size: 62.5% !important; } }

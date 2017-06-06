@@ -1,0 +1,292 @@
+html,
+body,
+span,
+div,
+a,
+ul,
+li,
+ol,
+menu,
+nav,
+header,
+footer {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+html,
+body {
+  height: 100%;
+  font-family: "Mircosoft Yahei";
+  font-size: 125%; }
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none; }
+
+ul,
+ol {
+  list-style-type: none; }
+
+input {
+  outline: none;
+  border: none; }
+
+.hint {
+  position: fixed;
+  -webkit-border-radius: 5px;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 5px;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 5px;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 5px;
+  -o-border-radius: 0.25rem;
+  border-radius: 5px;
+  border-radius: 0.25rem;
+  width: 320px;
+  width: 16rem;
+  height: 80px;
+  height: 4rem;
+  font-size: 24px;
+  font-size: 1.2rem;
+  line-height: 80px;
+  line-height: 4rem;
+  margin-left: -160px;
+  margin-left: -8rem;
+  left: 50%;
+  top: 25%;
+  background: violet;
+  color: white;
+  text-align: center;
+  display: none; }
+
+@media only screen and (max-width: 561px) {
+  html,
+  body {
+    font-size: 109% !important; } }
+@media only screen and (max-width: 481px) {
+  html,
+  body {
+    font-size: 94% !important; } }
+@media only screen and (max-width: 415px) {
+  html,
+  body {
+    font-size: 80.85938% !important; } }
+@media only screen and (max-width: 376px) {
+  html,
+  body {
+    font-size: 73.24219% !important; } }
+@media only screen and (max-width: 361px) {
+  html,
+  body {
+    font-size: 70.3125% !important; } }
+@media only screen and (max-width: 321px) {
+  html,
+  body {
+    font-size: 62.5% !important; } }
+body {
+  background: #fafafa; }
+
+header {
+  height: 86px;
+  height: 4.3rem;
+  width: 100%;
+  background: #f14d41;
+  padding: 28px 22px;
+  padding: 1.4rem 1.1rem; }
+  header span {
+    color: #FFF;
+    font-size: 30px;
+    font-size: 1.5rem;
+    line-height: 30px;
+    line-height: 1.5rem; }
+  header a {
+    color: #FFF;
+    float: right;
+    font-size: 30px;
+    font-size: 1.5rem;
+    line-height: 30px;
+    line-height: 1.5rem; }
+
+ul.login-style {
+  width: 100%;
+  height: 84px;
+  height: 4.2rem; }
+  ul.login-style li {
+    width: 50%;
+    text-align: center;
+    color: #636363;
+    font-size: 24px;
+    font-size: 1.2rem;
+    line-height: 84px;
+    line-height: 4.2rem;
+    height: 84px;
+    height: 4.2rem;
+    float: left; }
+  ul.login-style li.on-chosen {
+    border-bottom: 4px solid #f24a3d;
+    color: #f24a3d; }
+
+.containers {
+  width: 200%;
+  height: auto;
+  overflow: hidden; }
+  .containers .container {
+    width: 50%;
+    float: left;
+    height: auto; }
+    .containers .container .sheet {
+      width: 100%;
+      height: 170px;
+      height: 8.5rem;
+      border-bottom: 1px solid #e4e4e4;
+      border-top: 1px solid #e4e4e4;
+      background: white; }
+      .containers .container .sheet .username,
+      .containers .container .sheet .phone-number,
+      .containers .container .sheet .password,
+      .containers .container .sheet .icode {
+        width: 97%;
+        margin-left: 3%;
+        height: 84px;
+        height: 4.2rem;
+        position: relative; }
+        .containers .container .sheet .username span,
+        .containers .container .sheet .phone-number span,
+        .containers .container .sheet .password span,
+        .containers .container .sheet .icode span {
+          font-size: 24px;
+          font-size: 1.2rem;
+          line-height: 84px;
+          line-height: 4.2rem; }
+        .containers .container .sheet .username input,
+        .containers .container .sheet .phone-number input,
+        .containers .container .sheet .password input,
+        .containers .container .sheet .icode input {
+          width: 45%;
+          font-size: 24px;
+          font-size: 1.2rem;
+          margin-top: 30px;
+          margin-top: 1.5rem;
+          text-indent: 32px;
+          text-indent: 1.6rem;
+          color: #000; }
+    .containers .container .password,
+    .containers .container .icode {
+      border-top: 1px solid #e4e4e4; }
+    .containers .container .username .clearusername {
+      font-size: 24px;
+      font-size: 1.2rem;
+      margin-top: 30px;
+      margin-top: 1.5rem;
+      margin-right: 3%;
+      float: right;
+      display: none; }
+    .containers .container .icode .clearcode {
+      font-size: 24px;
+      font-size: 1.2rem;
+      margin-top: 30px;
+      margin-top: 1.5rem;
+      margin-right: 3%;
+      float: right;
+      display: none; }
+    .containers .container .password .visible-or-not,
+    .containers .container .password .clearpwd {
+      font-size: 24px;
+      font-size: 1.2rem;
+      margin-top: 30px;
+      margin-top: 1.5rem;
+      margin-right: 3%;
+      float: right; }
+    .containers .container .password .clearpwd {
+      display: none; }
+    .containers .container .phone-number .clearphonenum {
+      font-size: 24px;
+      font-size: 1.2rem;
+      margin-top: 30px;
+      margin-top: 1.5rem;
+      margin-right: 3%;
+      float: right;
+      display: none; }
+    .containers .container .phone-number .getcode {
+      float: right;
+      font-size: 24px;
+      font-size: 1.2rem;
+      margin-top: 27px;
+      margin-top: 1.35rem;
+      line-height: 30px;
+      line-height: 1.5rem;
+      padding: 0 12px;
+      padding: 0 0.6rem;
+      margin-right: 3%;
+      text-align: center;
+      -webkit-border-radius: 5px;
+      -webkit-border-radius: 0.25rem;
+      -moz-border-radius: 5px;
+      -moz-border-radius: 0.25rem;
+      -ms-border-radius: 5px;
+      -ms-border-radius: 0.25rem;
+      -o-border-radius: 5px;
+      -o-border-radius: 0.25rem;
+      border-radius: 5px;
+      border-radius: 0.25rem;
+      background: lightgreen;
+      color: white; }
+    .containers .container .phone-number .getcode.disabled {
+      background: #663a48;
+      color: yellow; }
+  .containers .login {
+    margin: 28px;
+    margin: 1.4rem;
+    font-size: 30px;
+    font-size: 1.5rem;
+    line-height: 84px;
+    line-height: 4.2rem;
+    height: 84px;
+    height: 4.2rem;
+    -webkit-border-radius: 5px;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 5px;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 5px;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 5px;
+    -o-border-radius: 0.25rem;
+    border-radius: 5px;
+    border-radius: 0.25rem;
+    background: #f7958c;
+    color: white;
+    text-align: center;
+    display: block; }
+  .containers .login.disabled {
+    color: grey; }
+  .containers .have-problem {
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    margin-top: 2rem;
+    height: 32px;
+    height: 1.6rem; }
+    .containers .have-problem a,
+    .containers .have-problem span {
+      color: #989898;
+      font-size: 20px;
+      font-size: 1rem;
+      line-height: 32px;
+      line-height: 1.6rem; }
+
+.container.phone-login .have-problem {
+  text-align: justify; }
+  .container.phone-login .have-problem a,
+  .container.phone-login .have-problem span {
+    float: left; }
+  .container.phone-login .have-problem .agreement {
+    float: right;
+    margin-right: 28px;
+    margin-right: 1.4rem; }
+  .container.phone-login .have-problem span {
+    margin-left: 28px;
+    margin-left: 1.4rem; }

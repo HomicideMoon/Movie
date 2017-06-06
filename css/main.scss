@@ -1,0 +1,91 @@
+@import 'public.scss';
+header {
+    width: 100%;
+    @include rem(height, 166px);
+    background: #d33e37;
+    overflow: hidden;
+    .location {
+        float: left;
+        margin: 16px 0 0 16px;
+        margin: 0.8rem 0 0 0.8rem;
+        color: white;
+        @include rem(line-height, 58px);
+        @include rem(font-size, 24px);
+        padding: 0 5px;
+        padding: 0 0.25rem;
+        i {
+            @include rem(line-height, 58px);
+            @include rem(font-size, 20px);
+            padding: 0 0 0 10px;
+            padding: 0 0 0 0.5rem;
+        }
+    }
+    ul {
+        @include rem(width, 341px);
+        @include rem(height, 58px);
+        @include rem(padding, 4px);
+        @include rad;
+        margin: 16px auto 28px auto;
+        margin: 0.8rem auto 1.4rem auto;
+        background: #b41f19;
+        li {
+            @include rem(width, 111px);
+            @include rem(height, 50px);
+            @include rad;
+            float: left;
+            background: #b41f19;
+            text-align: center;
+            display: block;
+            a {
+                color: #FFF;
+                @include rem(font-size, 22px);
+                @include rem(line-height, 50px);
+            }
+        }
+        li.h {
+            background: #FFF;
+        }
+        li.h a {
+            color: #b41f19;
+        }
+    }
+    .search {
+        @include rem(width, 608px);
+        @include rem(height, 53px);
+        @include rad(26.5px);
+        border: 1px solid #9c534d;
+        margin: 0 auto;
+        background: white;
+        text-align: center;
+        span {
+            @include rem(line-height, 51px);
+            @include rem(font-size, 22px);
+            color: #a9a9a9;
+            overflow: hidden;
+            i {
+                @include rem(line-height, 51px);
+                @include rem(font-size, 22px);
+                @include rem(padding-right, 10px);
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+.banner {
+    width: 100%;
+    @include rem(height, 133px);
+    background-image: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    @include rem(height,
+    90px);
+}
