@@ -24,7 +24,8 @@ body {
 a,
 a:hover,
 a:visited {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #989898; }
 
 ul,
 ol {

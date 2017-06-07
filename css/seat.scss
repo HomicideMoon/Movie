@@ -1,0 +1,178 @@
+@import 'public.scss';
+header {
+    @include rem(height, 86px);
+    width: 100%;
+    background: linear-gradient(to right, darken(#f14d41, 20%), lighten(#f14d41, 20%))88px 20px/2px 46px no-repeat, #f14d41;
+    background: linear-gradient(to right, darken(#f14d41, 20%), lighten(#f14d41, 20%))4.4rem 1rem/2px 2.3rem no-repeat, #f14d41;
+    padding: 28px 22px;
+    padding: 1.4rem 1.1rem;
+    text-align: center;
+    span {
+        color: #FFF;
+        @include rem(font-size, 30px);
+        @include rem(line-height, 30px);
+    }
+    .back,
+    .share {
+        color: #FFF;
+        float: right;
+        @include rem(font-size, 30px);
+        @include rem(line-height, 30px);
+    }
+    .back {
+        float: left;
+    }
+}
+
+.info {
+    @include rem(height, 118px);
+    width: 92%;
+    margin: 0 auto;
+    border-bottom: 2px solid #eeeeee;
+    overflow: hidden;
+    .title {
+        @include rem(font-size, 26px);
+        @include rem(margin-top, 27px);
+        @include rem(height, 26px);
+        @include rem(line-height, 26px);
+    }
+    .detail {
+        @include rem(font-size, 18px);
+        @include rem(margin-top, 23px);
+        @include rem(height, 18px);
+        @include rem(line-height, 18px);
+        color: #555555;
+    }
+}
+
+.seat-style-display {
+    width: 80%;
+    margin: 0 auto;
+    @include rem(height, 62px);
+    li {
+        text-align: center;
+        color: #555555;
+        float: left;
+        @include rem(height, 62px);
+        @include rem(line-height, 62px);
+        @include rem(font-size, 20px);
+        width: 33.3%;
+        span {
+            @include rem(line-height, 20px);
+            @include rem(height, 20px);
+            float: left;
+        }
+        a {
+            @include rem(height, 20px);
+            @include rem(margin-top, 21px);
+            float: left;
+        }
+        .box {
+            @include rem(width, 20px);
+            border: 2px solid #e4e4e4;
+        }
+        .choose-no {
+            background: #f14f3a;
+            border: 2px solid #9f3b2b;
+        }
+        .chosen {
+            background: #66c700;
+            border: 2px solid #539205;
+        }
+    }
+}
+
+.container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 93.75%;
+    position: relative;
+    background: #f1f1f1;
+    .list {
+        width: 6.25%;
+        height: 86.6666666666%;
+        position: absolute;
+        left: 0;
+        top: 6.66666666666%;
+        li {
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%;
+            background: rgba(169, 169, 169, 0.4);
+            @include rem(line-height, 40px);
+            color: white;
+            text-align: center;
+        }
+        li.head,
+        li.tail {
+            padding-bottom: 50%;
+            background: transparent;
+        }
+        li.head {
+            .left {
+                width: 50%;
+                height: 0;
+                padding-bottom: 50%;
+                background: rgba(169, 169, 169, 0.4);
+                float: left;
+                -webkit-border-top-left-radius: 100%;
+                -moz-border-top-left-radius: 100%;
+                -ms-border-top-left-radius: 100%;
+                -o-border-top-left-radius: 100%;
+                border-top-left-radius: 100%;
+            }
+            .right {
+                width: 50%;
+                height: 0;
+                padding-bottom: 50%;
+                background: rgba(169, 169, 169, 0.4);
+                float: right;
+                -webkit-border-top-right-radius: 100%;
+                -moz-border-top-rightradius: 100%;
+                -ms-border-top-right-radius: 100%;
+                -o-border-top-right-radius: 100%;
+                border-top-right-radius: 100%;
+            }
+        }
+        li.tail {
+            .left {
+                width: 50%;
+                height: 0;
+                padding-bottom: 50%;
+                background: rgba(169, 169, 169, 0.4);
+                float: left;
+                -webkit-border-bottom-left-radius: 100%;
+                -moz-border-bottom-left-radius: 100%;
+                -ms-border-bottom-left-radius: 100%;
+                -o-border-bottom-left-radius: 100%;
+                border-bottom-left-radius: 100%;
+            }
+            .right {
+                width: 50%;
+                height: 0;
+                padding-bottom: 50%;
+                background: rgba(169, 169, 169, 0.4);
+                float: right;
+                -webkit-border-bottom-right-radius: 100%;
+                -moz-border-top-rightradius: 100%;
+                -ms-border-bottom-right-radius: 100%;
+                -o-border-bottom-right-radius: 100%;
+                border-bottom-right-radius: 100%;
+            }
+        }
+    }
+    #can {
+        position: absolute;
+        top: 9.375%;
+        right: 9.375%;
+        width: 75%;
+        height: 0;
+        padding-bottom: 75%;
+        background: #FFF;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+}

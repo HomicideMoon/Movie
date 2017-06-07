@@ -1,0 +1,263 @@
+html,
+body,
+span,
+div,
+a,
+ul,
+li,
+ol,
+menu,
+nav,
+header,
+footer {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+html,
+body {
+  height: 100%;
+  font-family: "Mircosoft Yahei";
+  font-size: 125%; }
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: #989898; }
+
+ul,
+ol {
+  list-style-type: none; }
+
+input {
+  outline: none;
+  border: none; }
+
+.hint {
+  position: fixed;
+  -webkit-border-radius: 5px;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 5px;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 5px;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 5px;
+  -o-border-radius: 0.25rem;
+  border-radius: 5px;
+  border-radius: 0.25rem;
+  width: 320px;
+  width: 16rem;
+  height: 80px;
+  height: 4rem;
+  font-size: 24px;
+  font-size: 1.2rem;
+  line-height: 80px;
+  line-height: 4rem;
+  margin-left: -160px;
+  margin-left: -8rem;
+  left: 50%;
+  top: 25%;
+  background: violet;
+  color: white;
+  text-align: center;
+  display: none; }
+
+@media only screen and (max-width: 561px) {
+  html,
+  body {
+    font-size: 109% !important; } }
+@media only screen and (max-width: 481px) {
+  html,
+  body {
+    font-size: 94% !important; } }
+@media only screen and (max-width: 415px) {
+  html,
+  body {
+    font-size: 80.85938% !important; } }
+@media only screen and (max-width: 376px) {
+  html,
+  body {
+    font-size: 73.24219% !important; } }
+@media only screen and (max-width: 361px) {
+  html,
+  body {
+    font-size: 70.3125% !important; } }
+@media only screen and (max-width: 321px) {
+  html,
+  body {
+    font-size: 62.5% !important; } }
+header {
+  height: 86px;
+  height: 4.3rem;
+  width: 100%;
+  background: linear-gradient(to right, #be1a0e, #f8a6a0) 88px 20px/2px 46px no-repeat, #f14d41;
+  background: linear-gradient(to right, #be1a0e, #f8a6a0) 4.4rem 1rem/2px 2.3rem no-repeat, #f14d41;
+  padding: 28px 22px;
+  padding: 1.4rem 1.1rem;
+  text-align: center; }
+  header span {
+    color: #FFF;
+    font-size: 30px;
+    font-size: 1.5rem;
+    line-height: 30px;
+    line-height: 1.5rem; }
+  header .back,
+  header .share {
+    color: #FFF;
+    float: right;
+    font-size: 30px;
+    font-size: 1.5rem;
+    line-height: 30px;
+    line-height: 1.5rem; }
+  header .back {
+    float: left; }
+
+.info {
+  height: 118px;
+  height: 5.9rem;
+  width: 92%;
+  margin: 0 auto;
+  border-bottom: 2px solid #eeeeee;
+  overflow: hidden; }
+  .info .title {
+    font-size: 26px;
+    font-size: 1.3rem;
+    margin-top: 27px;
+    margin-top: 1.35rem;
+    height: 26px;
+    height: 1.3rem;
+    line-height: 26px;
+    line-height: 1.3rem; }
+  .info .detail {
+    font-size: 18px;
+    font-size: 0.9rem;
+    margin-top: 23px;
+    margin-top: 1.15rem;
+    height: 18px;
+    height: 0.9rem;
+    line-height: 18px;
+    line-height: 0.9rem;
+    color: #555555; }
+
+.seat-style-display {
+  width: 80%;
+  margin: 0 auto;
+  height: 62px;
+  height: 3.1rem; }
+  .seat-style-display li {
+    text-align: center;
+    color: #555555;
+    float: left;
+    height: 62px;
+    height: 3.1rem;
+    line-height: 62px;
+    line-height: 3.1rem;
+    font-size: 20px;
+    font-size: 1rem;
+    width: 33.3%; }
+    .seat-style-display li span {
+      line-height: 20px;
+      line-height: 1rem;
+      height: 20px;
+      height: 1rem;
+      float: left; }
+    .seat-style-display li a {
+      height: 20px;
+      height: 1rem;
+      margin-top: 21px;
+      margin-top: 1.05rem;
+      float: left; }
+    .seat-style-display li .box {
+      width: 20px;
+      width: 1rem;
+      border: 2px solid #e4e4e4; }
+    .seat-style-display li .choose-no {
+      background: #f14f3a;
+      border: 2px solid #9f3b2b; }
+    .seat-style-display li .chosen {
+      background: #66c700;
+      border: 2px solid #539205; }
+
+.container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 93.75%;
+  position: relative;
+  background: #f1f1f1; }
+  .container .list {
+    width: 6.25%;
+    height: 86.6666666666%;
+    position: absolute;
+    left: 0;
+    top: 6.66666666666%; }
+    .container .list li {
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      background: rgba(169, 169, 169, 0.4);
+      line-height: 40px;
+      line-height: 2rem;
+      color: white;
+      text-align: center; }
+    .container .list li.head,
+    .container .list li.tail {
+      padding-bottom: 50%;
+      background: transparent; }
+    .container .list li.head .left {
+      width: 50%;
+      height: 0;
+      padding-bottom: 50%;
+      background: rgba(169, 169, 169, 0.4);
+      float: left;
+      -webkit-border-top-left-radius: 100%;
+      -moz-border-top-left-radius: 100%;
+      -ms-border-top-left-radius: 100%;
+      -o-border-top-left-radius: 100%;
+      border-top-left-radius: 100%; }
+    .container .list li.head .right {
+      width: 50%;
+      height: 0;
+      padding-bottom: 50%;
+      background: rgba(169, 169, 169, 0.4);
+      float: right;
+      -webkit-border-top-right-radius: 100%;
+      -moz-border-top-rightradius: 100%;
+      -ms-border-top-right-radius: 100%;
+      -o-border-top-right-radius: 100%;
+      border-top-right-radius: 100%; }
+    .container .list li.tail .left {
+      width: 50%;
+      height: 0;
+      padding-bottom: 50%;
+      background: rgba(169, 169, 169, 0.4);
+      float: left;
+      -webkit-border-bottom-left-radius: 100%;
+      -moz-border-bottom-left-radius: 100%;
+      -ms-border-bottom-left-radius: 100%;
+      -o-border-bottom-left-radius: 100%;
+      border-bottom-left-radius: 100%; }
+    .container .list li.tail .right {
+      width: 50%;
+      height: 0;
+      padding-bottom: 50%;
+      background: rgba(169, 169, 169, 0.4);
+      float: right;
+      -webkit-border-bottom-right-radius: 100%;
+      -moz-border-top-rightradius: 100%;
+      -ms-border-bottom-right-radius: 100%;
+      -o-border-bottom-right-radius: 100%;
+      border-bottom-right-radius: 100%; }
+  .container #can {
+    position: absolute;
+    top: 9.375%;
+    right: 9.375%;
+    width: 75%;
+    height: 0;
+    padding-bottom: 75%;
+    background: #FFF; }
+
+footer {
+  width: 100%;
+  height: 300px; }

@@ -24,7 +24,8 @@ body {
 a,
 a:hover,
 a:visited {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #989898; }
 
 ul,
 ol {
@@ -154,7 +155,7 @@ header {
     position: relative; }
     .sheet .phone-number input,
     .sheet .CAPTCHA input {
-      width: 60%;
+      width: 55%;
       font-size: 24px;
       font-size: 1.2rem;
       margin-top: 30px;

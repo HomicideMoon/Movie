@@ -246,7 +246,7 @@ $(function () {
                     $(".login.with-pwd").addClass("disabled");
                 } else {
                     if (userdata[ind].online == 1) {
-                        $(".hint").text('该用户已在线');
+                        $(".hint").text('用户已在线');
                         hint();
                         errentry_pwd = 1;
                         $(".login.with-pwd").addClass("disabled");
@@ -292,15 +292,19 @@ $(function () {
                     errentry_code = 1;
                     $(".login.with-icode").addClass("disabled");
                 } else {
-                    $(".hint").text('登陆成功');
-                    hint();
-                    reqdata.splice(ind, 1);
                     $.each(userdata, function (key, val) {
                         if (mobile == val.username) {
-                            val.online = 1;
-                        }
+                            if (val.online == 1) {
+                                $(".hint").text('用户已在线');
+                                errentry_code = 1;
+                                $(".login.with-icode").addClass("disabled");
+                            } else {
+                                val.online = 1;
+                                $(".hint").text('登陆成功');
+                                reqdata.splice(ind, 1);
+                            }
+                        };
                     });
-
                 }
             }
         }
